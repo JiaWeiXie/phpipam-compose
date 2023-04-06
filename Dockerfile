@@ -47,7 +47,8 @@ RUN pecl install mcrypt-1.0.1 && docker-php-ext-enable mcrypt \
   simplexml \
   gmp \
   ldap \
-  gd
+  gd \
+  snmp
 
 RUN curl -L https://github.com/phpipam/phpipam/releases/download/v1.5.2/phpipam-v1.5.2.tgz | tar -xvz -C /tmp/ \
   && mv /tmp/phpipam/* . \
